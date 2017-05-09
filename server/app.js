@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 //base url hit
 app.use('/', index);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 //listen
 app.listen(port, function() {
